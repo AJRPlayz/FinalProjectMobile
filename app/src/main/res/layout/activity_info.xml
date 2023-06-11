@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of Movie"
+        app:layout_constraintStart_toStartOf="@id/info_card"
+        app:layout_constraintTop_toTopOf="@id/info_card"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -32,6 +37,7 @@
         android:layout_marginStart="20dp"
         android:src="@drawable/across_the_spider_verse" />
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/info_card"
         android:layout_width="200dp"
@@ -41,11 +47,6 @@
         android:layout_marginStart="180dp"
         android:layout_marginTop="170dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name of Movie"
-            app:layout_constraintStart_toStartOf="@id/info_card"
-            app:layout_constraintTop_toTopOf="@id/info_card"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
